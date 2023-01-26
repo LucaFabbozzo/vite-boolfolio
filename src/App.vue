@@ -1,18 +1,20 @@
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
+import { store } from './data/store';
+import ProjectCard from './components/ProjectCard.vue';
 export default {
   name: 'App',
 data() {
-  return {
-    baseUrl: 'http://127.0.0.1:8000/api/'
-  }
+    store
   },
+  components: {ProjectCard},
   methods: {
     getApi() {
-      axios.get(this.baseUrl + 'projects')
+      axios.get(store.baseUrl + 'projects')
         .then(result => {
-          console.log(result.data)
+          store.projects = result.data.projects
+          console.log(store.projects)
         })
     }
   },
@@ -23,7 +25,7 @@ data() {
 </script>
 
 <template>
-  <h1>Ciao</h1>
+  <ProjectCard />
 </template>
 
 
