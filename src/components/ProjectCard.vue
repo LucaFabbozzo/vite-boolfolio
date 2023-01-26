@@ -11,11 +11,13 @@ data() {
 </script>
 
 <template>
-    <h1>Projects List</h1>
-    <div v-for="project in store.projects" :key="project.id">
+  <div class="container">
+    <h1 class="title">My Projects List</h1>
+    <div class="project-list" v-for="project in store.projects" :key="project.id">
       <h3>{{ project.name }}</h3>
       <p>{{ project.summary }}</p>
     </div>
+  </div>
 </template>
 
 
