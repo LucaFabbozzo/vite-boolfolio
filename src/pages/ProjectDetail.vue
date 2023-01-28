@@ -27,6 +27,7 @@ export default {
 </script>
 
 
+
 <template>
   <!-- <div>
         <img :src="project.cover_image" :alt="project.name">
@@ -34,7 +35,10 @@ export default {
   <h1>{{ project.name }}</h1>
   <h3>{{ project.client_name }}</h3>
   <p>{{ project.summary }}</p>
-  <!-- <div v-if="project.types">Type: {{ project.types.name }}</div> -->
+  <div v-if="project.type">Type: {{ project.type.name }}</div>
+  <div v-if="project.technologies" class="tech-box">
+    <div v-for="technology in project.technologies" :key="technology.id">{{ technology.name }}</div>
+  </div>
 </template>
 
 
