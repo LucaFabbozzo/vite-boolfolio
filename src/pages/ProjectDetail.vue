@@ -28,15 +28,26 @@ export default {
 
 
 <template>
+  <!-- <div>
+        <img :src="project.cover_image" :alt="project.name">
+    </div> -->
   <h1>{{ project.name }}</h1>
   <h3>{{ project.client_name }}</h3>
   <p>{{ project.summary }}</p>
+  <!-- <div v-if="project.types">Type: {{ project.types.name }}</div> -->
 </template>
 
 
-
 <style lang="scss" scoped>
+img {
+  margin-bottom: 20px;
+}
+
 h1 {
   color: black;
+}
+
+h3 {
+  padding-bottom: 10px;
 }
 </style>
