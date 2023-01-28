@@ -40,9 +40,7 @@ export default {
 
   <h1>Projects List</h1>
 
-
-    <ProjectItem v-for="project in projects" :key="project.id" :project="project" />
-  
+  <ProjectItem v-for="project in projects" :key="project.id" :project="project" />
 
   <div class="paginate">
     <button :disabled="pagination.current === 1" @click="getApi(1)"> | &lt; </button>
@@ -63,6 +61,9 @@ export default {
 <style lang="scss">
 h1 {
   padding-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .paginate {

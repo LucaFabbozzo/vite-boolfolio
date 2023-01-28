@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/lato": "^4.5.10",
     "axios": "^1.2.4",
     "saas": "^1.0.0",
     "sass": "^1.57.1",

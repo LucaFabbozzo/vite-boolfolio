@@ -21,16 +21,23 @@ export default {
 header {
   ul {
     text-align: center;
+    margin-top: 20px;
 
     li {
       display: inline-block;
       text-transform: uppercase;
-      padding: 30px;
-      font-size: 1.2rem;
+      font-weight: bolder;
+      padding: 20px;
+      font-size: 1.1rem;
 
       a {
         text-decoration: none;
         color: #393939;
+
+        &:hover,
+        &.active {
+          color: #ee6c6c;
+        }
       }
     }
   }

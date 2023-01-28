@@ -1,4 +1,3 @@
-
 <script>
 import Header from './partials/Header.vue';
 export default {
@@ -22,6 +21,5 @@ export default {
 
 
 <style lang="scss">
-@use './style/general.scss' as *;
-
+@use './styles/general.scss'
 </style>
