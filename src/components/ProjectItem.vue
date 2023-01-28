@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 .projects-box {
-   padding-bottom: 20px;
+   padding-bottom: 80px;
 
    h3 {
      padding-bottom: 10px;
