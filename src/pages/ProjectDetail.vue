@@ -26,9 +26,13 @@ export default {
 
 </script>
 
+
 <template>
   <h1>{{ project.name }}</h1>
+  <h3>{{ project.client_name }}</h3>
+  <p>{{ project.summary }}</p>
 </template>
+
 
 
 <style lang="scss" scoped>
